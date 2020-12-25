@@ -15,6 +15,14 @@ module.exports = {
       path: path.join(__dirname, '/dist'),
       filename: 'bundle.js' 
   },
+  devServer: {
+    publicPath: '/'
+  },
+  // Default mode for Webpack is production.
+  // Depending on mode Webpack will apply different things
+  // on final bundle. For now we don't need production's JavaScript 
+  // minifying and other thing so let's set mode to development
+  mode: 'development',
   //Setup loaders
   // specify what webpack should do for a specific type for file.
   // Webpack out of box only understands JavaScript and JSON,

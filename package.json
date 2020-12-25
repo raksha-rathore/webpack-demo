@@ -4,8 +4,8 @@
   "description": "learning webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "webpack serve --hot ",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-core": "^6.26.3",
